@@ -1,0 +1,4 @@
+weather-build/project/*
+weather-build/target/*
+weather-build/core/target/*
+.DS_Store
