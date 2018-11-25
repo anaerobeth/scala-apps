@@ -1,4 +1,7 @@
 weather-build/project/*
 weather-build/target/*
 weather-build/core/target/*
+headlines/project/*
+headlines/target/*
+headlines/core/target/*
 .DS_Store
