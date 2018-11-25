@@ -8,6 +8,7 @@ val playJson  = "com.typesafe.play" %% "play-json" % "2.6.9"
 lazy val weatherApp = (project in file("."))
   .aggregate(weatherAppCore)
   .dependsOn(weatherAppCore)
+  .enablePlugins(JavaAppPackaging)
   .settings(
     name := "Weather App",
     libraryDependencies += scalaTest % Test,
