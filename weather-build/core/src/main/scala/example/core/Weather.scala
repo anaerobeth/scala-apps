@@ -12,6 +12,7 @@ object Weather {
     loc = scala.io.StdIn.readLine()
     return loc
   }
+
   def weather: Future[String] = {
     val loc = location
     val qs = s"select item.condition from weather.forecast where woeid in (select woeid from geo.places(1) where text='$loc') and u='c'"
@@ -24,14 +25,15 @@ object Weather {
     import ExecutionContext.Implicits._
     for {
       f <- http.run(r, Gigahorse.asString)
-      x <- parse(f)
-    } yield x
+      x <- parse(f, "text")
+      y <- parse(f, "temp")
+    } yield x.toLowerCase + "#" + y
   }
 
-  def parse(rawJson: String): Future[String] = {
+  def parse(rawJson: String, field: String): Future[String] = {
     val js = Json.parse(rawJson)
-    (js \\ "text").headOption match {
-      case Some(JsString(x)) => Future.successful(x.toLowerCase)
+    (js \\ field).headOption match {
+      case Some(JsString(x)) => Future.successful(x)
       case _                 => Future.failed(sys.error(rawJson))
     }
   }
