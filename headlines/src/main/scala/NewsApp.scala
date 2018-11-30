@@ -2,11 +2,11 @@ import org.jsoup.Jsoup
 import scala.collection.JavaConverters._
 
 object NewsApp extends App {
-  val bbc = Map("source" -> "BBC News", "url" -> "http://www.bbc.com/news", "selector" -> ".nw-c-most-read__items .gs-c-promo-heading__title", "base" -> "http://bbc.com/news")
+  val bbc = Map("source" -> "BBC News", "url" -> "http://www.bbc.com/news", "selector" -> ".nw-c-most-read__items a", "base" -> "http://bbc.com")
 
   val nytimes = Map("source" -> "NYTimes", "url" -> "https://www.nytimes.com/section/us", "selector" -> "li h2 a", "base" -> "https://www.nytimes.com")
 
-  val axios = Map("source" -> "Axios", "url" -> "https://www.axios.com", "selector" -> "h3", "base" -> "https://www.axios.com")
+  val axios = Map("source" -> "Axios", "url" -> "https://www.axios.com", "selector" -> "div[role='complementary'] a", "base" -> "https://www.axios.com")
 
   var index = 1
   var links = scala.collection.mutable.Map[String,String]()
@@ -20,8 +20,7 @@ object NewsApp extends App {
     newsHeadlines.asScala.take(6).foreach { h =>
       var href = site("base") + h.attr("href").toString()
       links(index.toString) = href
-      print(f"$index - ")
-      println(h.text())
+      println(index + " - " + h.text())
       index += 1
     }
   }
