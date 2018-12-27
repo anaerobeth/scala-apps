@@ -7,25 +7,30 @@ Example:
 sbt:headlines> run
 [info] Running NewsApp
 ------------ BBC News ------------
-Martial law vote after Ukraine-Russia clash
-Mexico to deport migrants who stormed border
-Mars probe set for '7 minutes of terror'
-Jackie Chan's daughter marries girlfriend
-The women killed on one day around the world
-One million South African bees 'poisoned'
+1 - Airline 'sorry' for mocking girl's name
+2 - Trump sides with Russia against FBI
+3 - Cancun hotel sued in 'tainted drink' death
+4 - Trump ex-lawyer admits lying to Congress
+5 - MeToo now unrecognisable, founder says
+6 - US woman jailed in 'candy floss mix-up'
 ------------ NYTimes ------------
-Over 700 Flights Canceled for Midwest Snowstorm
-After a Wildfire, Rebuilding Life Can Be Hardest for the Oldest
-$3,700 Generators and $666 Sinks: FEMA Contractors Charged Steep Markups on Puerto Rico Repairs
-Camp Fire Is 100 Percent Contained, California Officials Say
-Judge Rejects George Papadopoulos’s Motions to Delay Prison Sentence
-Black Man Killed by Officer in Alabama Mall Shooting Was Not the Gunman, Police Now Say
+7 - A Mall Shooting, a Black Man’s Death, and a Debate Over Race and Gun Rights
+8 - The Charlottesville Murder Trial Is Beginning. Here’s What to Know.
+9 - Three Weeks After Fire, Official Search for Dead is Completed
+10 - Everyone Who’s Been Charged as a Result of the Mueller Investigation
+11 - California Democratic Leader, Facing Sexual Misconduct Allegations, Steps Down
+12 - Mother Whose Child Died After ICE Detention Sues for $60 Million
 ------------ Axios ------------
-Apple heads back to the Supreme Court
-Women are most likely to be killed by partners, family members
-CRISPR inventor wants temporary halt on editing embryos
-What they're saying: Tear gas at the border met with outrage, defense
-Axios Login: Bill Gates on climate — Musk wants it both ways on AI — Apple at Supreme Court
-Axios Pro Rata: Private market fallout — Airbnb names CFO — No Plantronics deal for Logitech
-[success] Total time: 2 s, completed Nov 26, 2018, 10:19:21 AM
+13 - Giants of the deep, blue whales are changing their tune
+14 - Big tech and startups are hungry for defense contracts
+15 - Sea-level rise: The ostrich approach to climate adaptation
+16 - Italian official: Nothing will come from Brussels budget standoff
+17 - For Amazon, success breeds enemies
+18 - Axios Future: Amazon's success and enemies — Amazon's labor unrest — Seismic mystery
+Type the headline # you want to read, m for more, or 0 to exit): 9
+
+Supported by By Thomas Fuller SAN FRANCISCO — Search teams that rushed to Northern California after fire leveled entire towns have completed their work, having checked every burned building in the fire zone for human remains, the authorities said Thursday. But the search of nearly 18,000 fire-ravaged structures — everything from homes, churches, stores and garden sheds — has not resolved the question of why nearly 200 people remain on the list of the missing. It is possible that the death toll, which stands at 88, will rise, if some remains were overlooked or are found later in forests or other areas that were not searched. Sheriff Kory L. Honea of Butte County, who led the search, said Thursday that he was “very optimistic” that people currently listed as unaccounted for would be found al...
+Type the headline # you want to read, m for more, or 0 to exit): 0
+Goodbye
+[success] Total time: 95 s, completed Nov 29, 2018, 9:55:16 PM
 ```

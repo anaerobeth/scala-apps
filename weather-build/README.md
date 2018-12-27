@@ -4,7 +4,9 @@ Dependencies: gigahorse-okhttp, scalatest, play-json
 
 Basic implementation: https://www.scala-sbt.org/1.x/docs/sbt-by-example.html.
 
-Enhancements: Prompt user for a city and return its weather forecast
+Enhancements: Prompt user for a city and return its weather forecast (condition and temperature)
+
+TODO: save and load cities
 
 Example:
 ```
